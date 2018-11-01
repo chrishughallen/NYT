@@ -1,6 +1,4 @@
 let apiKey = config.API_KEY;
-
-
 let news = $('.article')
 
 $.ajax('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + apiKey)
