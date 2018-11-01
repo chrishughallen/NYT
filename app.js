@@ -40,11 +40,9 @@ $.ajax('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + apiKey)
 
 
 $('#dark').click(function (){
-   $('#bootstrap').attr('href','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
    $('#custom').attr('href','dark.css')
 });
 $('#light').click(function (){
-   $('#bootstrap').attr('href','https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
    $('#custom').attr('href','style.css');
 });
 
