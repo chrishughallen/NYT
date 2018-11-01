@@ -1,7 +1,9 @@
- // d7287e5bd5b047f389384ae12f9ad76f
+let apiKey = config.API_KEY;
+
+
 let news = $('.article')
 
-$.ajax('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=d7287e5bd5b047f389384ae12f9ad76f')
+$.ajax('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + apiKey)
 .done(function(data){
 	let arr = data.results
 	arr.forEach(function(item){
@@ -28,7 +30,7 @@ $.ajax('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=d7287e5bd5b0
 
 	article += "<a target=\"_blank\" href=\""
 	article += url
-	article += "\">read more</a>"
+	article += "\"><button class=\"btn btn-primary\">view article</button></a>"
 
 	article += "</div>"
 
